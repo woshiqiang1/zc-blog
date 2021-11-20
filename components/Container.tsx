@@ -1,8 +1,7 @@
-import Head from "next/head"
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import NextLink from 'next/link'
-import Footer from "components/Footer";
-
+import Footer from 'components/Footer'
 
 function NavItem({ href, text }) {
   const router = useRouter()
@@ -10,7 +9,7 @@ function NavItem({ href, text }) {
 
   return (
     <NextLink href={href}>
-      <a >
+      <a>
         <span>{text}</span>
       </a>
     </NextLink>
@@ -18,7 +17,6 @@ function NavItem({ href, text }) {
 }
 
 export default function Container(props) {
-
   const { children } = props
   const meta = {
     title: 'zc - just a coder',
@@ -40,13 +38,10 @@ export default function Container(props) {
             <div>
               <NavItem href="/" text="Home" />
             </div>
-
           </nav>
         </div>
       </Head>
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   )
