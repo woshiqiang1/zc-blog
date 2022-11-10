@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/future/image'
 import { Button } from '@chakra-ui/react'
 
-const CustomLink = (props) => {
+const CustomLink = (props: any) => {
   const href = props.href;
   const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'));
 
@@ -17,7 +17,7 @@ const CustomLink = (props) => {
   return <a target="_blank" rel="noopener noreferrer" {...props} />;
 }
 
-function RoundedImage(props) {
+function RoundedImage(props: any) {
   return <Image alt={props.alt} className="rounded-lg" {...props} />;
 }
 

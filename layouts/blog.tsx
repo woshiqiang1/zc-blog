@@ -1,6 +1,6 @@
 import Container from '../components/Container'
 
-export default function BlogLayout({children, post}) {
+export default function BlogLayout({children, post}: any) {
   const { title, date } = post
 
   return (
