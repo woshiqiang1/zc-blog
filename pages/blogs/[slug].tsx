@@ -7,7 +7,7 @@ import path from 'path'
 import matter from 'gray-matter'
 
 
-function PostPage({ post }) {
+function PostPage({ post }: any) {
 
   return (
     <BlogLayout post={post}>
@@ -38,7 +38,7 @@ const getStaticPaths = async () => {
   }
 }
 
-const getStaticProps = async ({ params: { slug } }) => {
+const getStaticProps = async ({ params: { slug } }: any) => {
   const markdownWithMeta = fs.readFileSync(path.join('posts',
     slug + '.mdx'), 'utf-8')
 
