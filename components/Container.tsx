@@ -31,7 +31,7 @@ function NavItem({ href, text }: INavItemProps) {
   )
 }
 
-export default function Container(props) {
+export default function Container(props: any) {
   const { title } = props
   const meta = {
     title: title || 'ZC - just a coder',
