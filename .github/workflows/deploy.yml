@@ -23,7 +23,7 @@ jobs:
 
       - name: Build
         run: |
-          npm ci
+          npm i --legacy-peer-deps
           npm run build
           npm run export
           touch out/.nojekyll
