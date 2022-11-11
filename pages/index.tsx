@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div>
         <NextLink href="/blogs/test">
           <span className="flex items-center mb-2 cursor-pointer">
-            <span className="mr-2 text-lg text-gary-900 dark:text-gray-100">this is a blog title 1</span>
+            <span className="mr-2 text-lg text-gary-900 dark:text-gray-100">this is a blog title 123</span>
             <Badge variant='solid' colorScheme='yellow'>JavaScript</Badge>
           </span>
         </NextLink>
