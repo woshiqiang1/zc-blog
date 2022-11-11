@@ -36,7 +36,7 @@ export default function Container(props: any) {
   const meta = {
     title: title || 'ZC - just a coder',
     description: 'frontend developer, ',
-    type: 'website'
+    type: 'website',
   }
 
   const { resolvedTheme, setTheme } = useTheme()
