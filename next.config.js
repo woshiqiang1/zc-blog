@@ -14,7 +14,7 @@ module.exports = withMDX({
   reactStrictMode: true,
   swcMinify: true,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  assetPrefix: isProd ? "/zc-blog/" : "",
+  assetPrefix: isProd ? "/zc-blog" : "",
   images: {
     unoptimized: true,
   },
