@@ -17,7 +17,8 @@ module.exports = withMDX({
   basePath: isProd ? '/zc-blog' : '',
   assetPrefix: isProd ? '/zc-blog/' : '.',
   images: {
-    unoptimized: true,
+    loader: 'akamai',
+    path: '',
   },
 })
 
