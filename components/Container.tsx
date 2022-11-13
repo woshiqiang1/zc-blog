@@ -42,16 +42,23 @@ export default function Container(props: any) {
   const { resolvedTheme, setTheme } = useTheme()
 
   return (
-    <div className="min-h-full bg-gray-50 dark:bg-gray-900">
-      <div className="px-20 py-2">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
+      <div className="py-8 grow" style={{ paddingLeft: '18vw', paddingRight: '18vw' }}>
         <Head>
           <title>{meta.title}</title>
           <meta name="robots" content="follow, index"></meta>
           <meta name="description" content={meta.description}></meta>
           <meta property="og:type" content={meta.type} />
         </Head>
-        <div className="flex justify-between align-middle">
-          <nav>
+        <div className="flex justify-between align-middle mb-8">
+          <nav className="flex align-middle">
+            <Image
+              alt="zc avatar"
+              className="rounded-full"
+              src="/avatar.png"
+              width={40}
+              height={40}
+            />
             <NavItem href="/" text="Blog"/>
             <NavItem href="/links" text="Links"/>
             <NavItem href="/about" text="About"/>
@@ -72,7 +79,7 @@ export default function Container(props: any) {
         </div>
         {props.children}
       </div>
-      <footer className="w-full fixed bottom-2 text-center text-gray-800 dark:text-gray-200">
+      <footer className="w-full mb-4 text-center text-gray-800 dark:text-gray-200">
         make with NextJS by zc
       </footer>
     </div>
