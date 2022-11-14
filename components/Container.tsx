@@ -6,6 +6,7 @@ import cn from 'classnames'
 import { useTheme } from 'next-themes'
 import { Button } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
+import avatar from '../public/avatar.png'
 
 
 interface INavItemProps {
@@ -55,7 +56,7 @@ export default function Container(props: any) {
             <Image
               alt="zc avatar"
               className="rounded-full"
-              src="/avatar.png"
+              src={avatar}
               width={40}
               height={40}
             />
