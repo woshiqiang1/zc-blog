@@ -17,7 +17,7 @@ const PostItem = ({ path, title, tags }: any) => {
           tags.map((name: string) => {
             const { fullName, color } = tagList.find(tag => tag.name === name) as TagItem
             return (
-              <Badge className="mr-2" variant='solid' colorScheme={color}>{fullName}</Badge>
+              <Badge key={name} className="mr-2" variant='solid' colorScheme={color}>{fullName}</Badge>
             )
           })
         }
