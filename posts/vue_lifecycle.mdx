@@ -1,0 +1,29 @@
+---
+title:
+date: 2022-11-14
+tags: []
+---
+
+# Vue2 的 beforeDestroy 什么时候会调用
+
+在使用 Vue 开发业务的过程中，经常会有在页面关闭、刷新的时候做一些清除操作，一些开发者会自然而然地联想到在 `beforeDestroy` 生命周期里处理这些清除的逻辑。
+但是会发现浏览器页面刷新和关闭的时候，这个 lifecycle hook 并不会调用。原因在官方文档也可以看到：`beforeDestroy` 只有在以下情况才会调用
+
+> when vm.$destroy() is called
+
+正常情况下我们不应该主动调用 `vm.$destroy()`，因为 `v-if` 和 `v-for` 和自带的**数据驱动**，会帮我们自动控制组件 lifecycle hooks 的调用。但是在某些特殊场景，你可能需要主导触发组件的卸载，比如页面关闭或者刷新，
+你可以尝试以下方式：
+```js:Page.vue
+{
+  created() {
+    window.addEventListener('beforeunload', () => {
+      this.$destroy()
+    })
+  },
+
+  beforeDestroy() {
+    this.pageEndReport()
+    this.clearData()
+  }
+}
+```

@@ -5,9 +5,18 @@ import { mdxToHtml } from '../../libs/mdx'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import type { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
+type TProps = {
+  post: {
+    title: string;
+    content: MDXRemoteSerializeResult;
+    wordCount: number;
+    readingTime: string;
+  }
+}
 
-function PostPage({ post }: any) {
+function PostPage({ post }: TProps) {
 
   return (
     <BlogLayout post={post}>
