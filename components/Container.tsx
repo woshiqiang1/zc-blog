@@ -46,6 +46,7 @@ export default function Container(props: any) {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
       <div className="py-8 grow" style={{ paddingLeft: '18vw', paddingRight: '18vw' }}>
         <Head>
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
           <title>{meta.title}</title>
           <meta name="robots" content="follow, index"></meta>
           <meta name="description" content={meta.description}></meta>
