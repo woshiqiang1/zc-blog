@@ -1,0 +1,71 @@
+---
+title: blog title
+date: 2022-11-15
+description: some MDX use case
+thumbnailUrl: img url
+tags: ['markdowm', 'demo']
+---
+
+# This is title
+
+## This is sub title
+
+### HTML use
+<div>
+  This is a blog post about <strong>functions</strong>. <br/>
+  We'll learn what functions are, how to write functions, and how to use them.
+</div>
+<br/>
+
+### Footnote
+A note1[^1]\
+A note2[^2]
+
+[^1]: Big note1.
+[^2]: Note2.
+
+---
+
+### Strikethrough
+~one~ or ~~two~~ tildes.
+
+---
+
+### Table
+| a | b  |  c |  d  |
+| - | :- | -: | :-: |
+| 1 | 2  | 3  |  4  |
+
+---
+
+### Tasklist
+* [ ] to do
+* [x] done
+
+---
+
+### Bold and Italic and inline code
+some **Bold** __Bold__ and _Italic_  *Italic*  and `inline code`
+
+---
+
+### some code with filename
+```js:src/demo.js
+const doStuff = () => {
+  return console.log('hey')
+}
+```
+
+---
+
+### some code with line highlight
+
+```js {2} showLineNumbers
+  const doSomething = () => {
+    return console.log('hey')
+  }
+```
+---
+
+### Display component
+<div>Here, I'm using a component inside my MarkDown file: {<Button>click</Button>} </div>

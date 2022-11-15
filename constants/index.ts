@@ -13,23 +13,28 @@ const tagList: TagItem[]= [
   {
     name: 'React',
     fullName: 'React',
-    color: 'blue',
+    color: 'cyan',
   },
   {
     name: 'Vue2',
     fullName: 'Vue 2',
-    color: 'green',
+    color: 'whatsapp',
   },
   {
     name: 'Vue3',
     fullName: 'Vue3',
-    color: 'green',
+    color: 'whatsapp',
   },
   {
     name: 'CSS',
     fullName: 'CSS',
     color: 'pink',
   },
+  {
+    name: 'Draft',
+    fullName: 'Draft',
+    color: 'blackAlpha',
+  }
 ]
 
 export { tagList }

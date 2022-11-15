@@ -11,6 +11,8 @@ tags: []
 
 > when vm.$destroy() is called
 
+而页面关闭、刷新的时候并不会调用 `vm.$destroy` ，所以不会触发 `beforeDestroy` hook。
+
 正常情况下我们不应该主动调用 `vm.$destroy()`，因为 `v-if` 和 `v-for` 和自带的**数据驱动**，会帮我们自动控制组件 lifecycle hooks 的调用。但是在某些特殊场景，你可能需要主导触发组件的卸载，比如页面关闭或者刷新，
 你可以尝试以下方式：
 ```js:Page.vue
