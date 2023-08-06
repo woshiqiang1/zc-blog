@@ -49,7 +49,7 @@
     "edge >= 79",
     "firefox >= 67",
     "opera >= 51",
-    "ie >= 11",
+    "ie 10",
     "ios >= 9",
     "android >= 4.4"
   ]
