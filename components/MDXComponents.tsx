@@ -21,8 +21,10 @@ function RoundedImage(props: any) {
   return <Image alt={props.alt} className="rounded-lg" {...props} />;
 }
 
-export default {
+const components = {
   Image: RoundedImage,
   a: CustomLink,
   Button,
 }
+
+export default components
