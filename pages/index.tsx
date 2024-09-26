@@ -36,6 +36,7 @@ const Home: NextPage = () => {
           一些工作、学习相关的 blog 记录，供自己回顾或者大家参考，如有不正确的地方，欢迎大家邮件（775106512@qq.com）和我交流。
         </p>
       </div>
+      <PostItem path="about_writing" title="Why you should write" tags={['Draft']}/>
       <PostItem path="vue_lifecycle" title="When Vue beforeDestroy trigger" tags={['Vue2']}/>
       <PostItem path="demo" title="this is a MDX demo" tags={['JS']}/>
       <PostItem path="post1" title="this is a blog title 2" tags={['Draft']}/>
